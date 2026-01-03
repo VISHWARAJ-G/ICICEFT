@@ -34,7 +34,10 @@ function Navbar() {
     <nav className="flex md:w-full w-full py-3 fixed justify-between items-center top-0 left-0 z-50 lg:pr-5 gap-5 bg-white sm:px-auto px-4">
       <div className="lg:w-64 md:w-52 w-48 h-auto flex-shrink-0">
         <img
-          src="Logo.png"
+          src="/optimized/Logo.webp"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
           alt="Saveetha Engineering College"
           className="w-full"
         />

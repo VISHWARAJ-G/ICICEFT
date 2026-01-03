@@ -25,7 +25,10 @@ function ImageSection({
         {LandingPage && !Sec && !Department && !Conference ? (
           <>
             <img
-              src="College.png"
+              src="/optimized/College.webp"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async"
               alt="Saveetha Engineering College"
               className="w-full h-full"
             />
@@ -41,7 +44,9 @@ function ImageSection({
                       IN ASSOCIATION WITH
                     </h5>
                     <img
-                      src="Springer.png"
+                      src="/optimized/Springer.webp"
+                      loading="lazy"
+                      decoding="async"
                       alt="Springer"
                       className="md:h-14 sm:h-10 h-10 backdrop-blur-xl bg-white/100"
                     />
@@ -63,7 +68,10 @@ function ImageSection({
         ) : (
           <>
             <img
-              src="College2.png"
+              src="/optimized/College2.webp"
+              fetchpriority="high"
+              loading="eager"
+              decoding="async"
               alt="Saveetha Engineering College"
               className="w-full h-full object-cover"
             />

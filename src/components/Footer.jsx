@@ -110,6 +110,8 @@ function Footer() {
                       {typeof Logo === "string" ? (
                         <img
                           src={obj.Logo}
+                          loading="lazy"
+                          decoding="async"
                           alt={obj.linkName}
                           className="bg-white h-10 w-10"
                         />

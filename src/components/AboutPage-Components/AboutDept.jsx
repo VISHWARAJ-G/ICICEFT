@@ -43,7 +43,9 @@ function AboutDept() {
         <div className="flex justify-center items-center">
           <div className="absolute -top-12 left-1/2 -translate-x-1/2 sm:w-40 sm:h-40 w-36 h-36 flex items-center justify-center">
             <img
-              src="Scoft.png"
+              src="/optimized/Scoft.webp"
+              loading="lazy"
+              decoding="async"
               alt="SCoFT"
               className="w-full h-full object-contain"
             />
@@ -105,9 +107,7 @@ function AboutDept() {
                     <Icon className="w-6 h-6 text-blue-800 group-hover:text-white" />
                     <span className="xl:text-base text-xs">{d}</span>
                   </div>
-                  <div
-                    className="absolute inset-0 z-0 bg-gradient-to-r from-sky-950/90 via-teal-900/70 to-blue-950/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  />
+                  <div className="absolute inset-0 z-0 bg-gradient-to-r from-sky-950/90 via-teal-900/70 to-blue-950/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               );
             })}

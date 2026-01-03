@@ -5,39 +5,39 @@ import OrganizingCommiteeSection from "../components/HomePage-Componets/Organizi
 function OrganizingCommittee() {
   const patrons = [
     {
-      image: "Faculties/Patron1.jpeg",
+      image: "/optimized/Patron1.webp",
       tagName: "Dr. S. Rajesh",
       designation: "Director, SEC",
     },
     {
-      image: "Faculties/Patron2.jpeg",
+      image: "/optimized/Patron2.webp",
       tagName: "Dr. Saveetha Rajesh",
       designation: "Director, SMC&H",
     },
   ];
   const organizingSecretary = [
     {
-      image: "Faculties/Vijay-Anand.jpg",
+      image: "/optimized/Vijay-Anand.webp",
       tagName: "Dr. M. Vijay Anand",
-      designation: "Professor, CSE"
+      designation: "Professor, CSE",
     },
     {
-      image: "Faculties/Rajendra-Thilahar.png",
+      image: "/optimized/Rajendra-Thilahar.webp",
       tagName: "Dr. C. Rajendra Thilahar",
-      designation: "Assistant Professor, CSE"
-    }
+      designation: "Assistant Professor, CSE",
+    },
   ];
   return (
     <section>
       <ImageSection OC={true} />
       <div className="flex flex-col sm:gap-10 gap-5 items-center md:py-10 py-5 w-full">
         <div className="flex items-center justify-between flex-col gap-6 w-full mt-2">
-          <h3 className="font-semibold md:text-3xl text-xl">
-            Chief Patron
-          </h3>
+          <h3 className="font-semibold md:text-3xl text-xl">Chief Patron</h3>
           <div className="flex flex-col items-center justify-center gap-5 sm:w-auto w-full">
             <img
-              src={"Faculties/Patron.png"}
+              src={"/optimized/Patron.webp"}
+              loading="lazy"
+              decoding="async"
               alt={"Dr. N. M. Veeraiyan"}
               className="md:h-40 md:w-40 h-28 w-28 rounded-full"
             />
@@ -52,9 +52,7 @@ function OrganizingCommittee() {
           </div>
         </div>
         <div className="flex items-center justify-between flex-col gap-6 w-full mt-2">
-          <h3 className="font-semibold md:text-3xl text-xl">
-            Patrons
-          </h3>
+          <h3 className="font-semibold md:text-3xl text-xl">Patrons</h3>
           <div className="w-full lg:w-3/4 grid sm:flex sm:justify-between grid-cols-1 gap-8">
             {patrons.map((obj) => {
               return (
@@ -65,6 +63,8 @@ function OrganizingCommittee() {
                   <img
                     src={obj.image}
                     alt={obj.tagName}
+                    loading="lazy"
+                    decoding="async"
                     className="md:h-40 md:w-40 h-28 w-28 rounded-full"
                   />
                   <h1 className="font-bold sm:text-lg text-base text-center">
@@ -93,6 +93,8 @@ function OrganizingCommittee() {
                   <img
                     src={obj.image}
                     alt={obj.tagName}
+                    loading="lazy"
+                    decoding="async"
                     className="md:h-40 md:w-40 h-28 w-28 rounded-full"
                   />
                   <h1 className="font-bold sm:text-lg text-base text-center">

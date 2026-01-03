@@ -3,42 +3,46 @@ import React from "react";
 function OrganizingCommiteeSection({ CommitteePage }) {
   const generalChairs = [
     {
-      image: "Faculties/Principal.png",
+      image: "/optimized/Principal.webp",
       tagName: "Dr. V. Vijaya Chamundeeswari",
       designation: "Principal, SEC",
     },
     {
-      image: "Faculties/Dean.jpg",
+      image: "/optimized/Dean.webp",
       tagName: "Mr. C. Obed Otto",
       designation: "Associate Dean",
     },
   ];
   const programChairs = [
     {
-      image: "Faculties/HoD_CSE.png",
+      image: "/optimized/HoD_CSE.webp",
       tagName: "Dr. G. Nagappan",
       designation: "Professor & Head, CSE",
     },
     {
-      image: "Faculties/HoD_AIDS.png",
+      image: "/optimized/HoD_AIDS.webp",
       tagName: "Dr.G.Karthi",
       designation: "Associate Professor & Head, AIDS",
     },
     {
-      image: "Faculties/Nalini-priya.jpg",
+      image: "/optimized/Nalini-priya.webp",
       tagName: "Dr.G.Nalini Priya",
       designation: "Professor, IT",
     },
   ];
   return (
-    <div className={`${!CommitteePage ? "sm:px-10 px-2 py-20" : "w-full"} flex flex-col items-center justify-center sm:gap-10 gap-5`}>
-      {!CommitteePage && <h1 className="font-bold md:text-4xl sm:text-2xl text-xl">
-        Organizing Team
-      </h1>}
+    <div
+      className={`${
+        !CommitteePage ? "sm:px-10 px-2 py-20" : "w-full"
+      } flex flex-col items-center justify-center sm:gap-10 gap-5`}
+    >
+      {!CommitteePage && (
+        <h1 className="font-bold md:text-4xl sm:text-2xl text-xl">
+          Organizing Team
+        </h1>
+      )}
       <div className="flex items-center justify-between flex-col gap-6 w-full mt-2">
-        <h3 className="font-semibold md:text-3xl text-xl">
-          General Chairs
-        </h3>
+        <h3 className="font-semibold md:text-3xl text-xl">General Chairs</h3>
         <div className="w-full lg:w-3/4 grid sm:flex sm:justify-between grid-cols-1 gap-8">
           {generalChairs.map((obj) => {
             return (
@@ -46,7 +50,13 @@ function OrganizingCommiteeSection({ CommitteePage }) {
                 className="flex flex-col items-center gap-3 sm:w-3/4 w-full"
                 key={obj.tagName}
               >
-                <img src={obj.image} alt={obj.tagName} className="md:h-40 md:w-40 h-28 w-28" />
+                <img
+                  src={obj.image}
+                  loading="lazy"
+                  decoding="async"
+                  alt={obj.tagName}
+                  className="md:h-40 md:w-40 h-28 w-28"
+                />
                 <h1 className="font-bold sm:text-lg text-base text-center">
                   {obj.tagName}
                 </h1>
@@ -60,13 +70,13 @@ function OrganizingCommiteeSection({ CommitteePage }) {
       </div>
 
       <div className="flex items-center justify-center flex-col gap-6 mt-6">
-        <h3 className="font-semibold md:text-3xl text-xl">
-          Conference Chair
-        </h3>
+        <h3 className="font-semibold md:text-3xl text-xl">Conference Chair</h3>
         <div className="w-full grid sm:flex sm:justify-center grid-cols-1 gap-8">
           <div className="flex flex-col items-center justify-center gap-3 sm:w-auto w-full">
             <img
-              src={"Faculties/HoD_IT.jpg"}
+              src={"/optimized/HoD_IT.webp"}
+              loading="lazy"
+              decoding="async"
               alt={"Dr. K. Suresh Kumar"}
               className="md:h-40 md:w-40 h-28 w-28"
             />
@@ -80,9 +90,7 @@ function OrganizingCommiteeSection({ CommitteePage }) {
         </div>
       </div>
       <div className="flex flex-col w-full items-center justify-between gap-6 mt-6 px-5">
-        <h3 className="font-semibold md:text-3xl text-xl">
-          Program Chairs
-        </h3>
+        <h3 className="font-semibold md:text-3xl text-xl">Program Chairs</h3>
         <div className="grid md:flex md:justify-between grid-cols-1 gap-8 lg:w-3/4 w-full">
           {programChairs.map((obj) => {
             return (
@@ -90,7 +98,13 @@ function OrganizingCommiteeSection({ CommitteePage }) {
                 className="flex flex-col items-center gap-3"
                 key={obj.tagName}
               >
-                <img src={obj.image} alt={obj.tagName} className="md:h-40 md:w-40 h-28 w-28" />
+                <img
+                  src={obj.image}
+                  alt={obj.tagName}
+                  loading="lazy"
+                  decoding="async"
+                  className="md:h-40 md:w-40 h-28 w-28"
+                />
                 <h1 className="font-bold sm:text-lg text-base text-center">
                   {obj.tagName}
                 </h1>

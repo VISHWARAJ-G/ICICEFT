@@ -45,7 +45,13 @@ function TravelsVisaComponent() {
             </div>
           </div>
           <div className="lg:w-[400px] md:w-[320px] w-[200px] lg:min-w-[400px] md:min-w-[320px] min-w-[200px] text-center h-full min-h-full shrink-0 pl-8 md:pl-0 md:pb-0">
-            <img src="College2.png" alt="SEC" className="w-full h-full" />
+            <img
+              src="/optimized/College2.webp"
+              loading="lazy"
+              decoding="async"
+              alt="SEC"
+              className="w-full h-full"
+            />
           </div>
           <div className="absolute w-4 bg-yellow-400/20 top-0 left-0 h-full"></div>
         </div>

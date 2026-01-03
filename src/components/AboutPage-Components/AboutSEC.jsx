@@ -84,7 +84,13 @@ function AboutSEC() {
     <div className="w-full bg-gray-200 md:px-21 sm:px-7 px-3 py-12 flex flex-col gap-16">
       <div className="bg-white flex xl:flex-row flex-col items-center justify-center sm:gap-7 gap-4 xl:p-0 md:p-10 sm:p-5 pt-5  rounded-3xl overflow-hidden">
         <div className="xl:w-[400px] md:w-[300px] w-[200px] xl:min-w-[400px] md:min-w-[300px] min-w-[200px] h-full min-h-full shrink-0">
-          <img src="College2.png" alt="SEC" className="w-full h-full" />
+          <img
+            src="/optimized/College2.webp"
+            loading="lazy"
+            decoding="async"
+            alt="SEC"
+            className="w-full h-full"
+          />
         </div>
         <div className="flex-[4] flex flex-col md:gap-5 gap-2 xl:pr-6 justify-center">
           <div className="xl:text-left text-center flex flex-col xl:gap-1 sm:gap-4">
