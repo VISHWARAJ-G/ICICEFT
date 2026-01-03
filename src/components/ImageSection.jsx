@@ -31,7 +31,7 @@ function ImageSection({
             />
             <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
               <div className="lg:w-[90%] absolute lg:top-auto sm:top-20 w-full lg:px-auto sm:px-5 flex flex-col gap-5">
-                <h1 className="lg:text-5xl sm:text-3xl xs:text-2xl raleway font-extrabold text-white text-center leading-tight px-5 sm:px-auto">
+                <h1 className="lg:text-5xl sm:text-3xl xs:text-2xl raleway font-extrabold text-white text-center leading-tight md:px-5 px-2 sm:px-auto">
                   International Conference on Innovations in Computing:
                   Exploring the Frontiers of Technology (ICICEFT)
                 </h1>
@@ -49,12 +49,9 @@ function ImageSection({
                 </div>
                 <div className="flex justify-center items-center mt-5">
                   <div className="flex justify-center gap-16 md:w-1/2 md:ml-[-1rem] lato-regular">
-                    <Link
-                      to="/conference"
-                      className="sm:px-5 sm:py-4 px-5 py-1 backdrop-blur-sm bg-slate-100/10 border-2 border-slate-100 font-medium rounded-lg text-white text-nowrap lg:text-base sm:text-sm text-xs"
-                    >
-                      Conference Info
-                    </Link>
+                    <div className="px-4 backdrop-blur-sm bg-slate-100/10 border-2 border-slate-100 font-medium rounded-lg text-white text-nowrap lg:text-base sm:text-sm text-xs flex justify-center items-center">
+                      <Link to="/conference">Conference Info</Link>
+                    </div>
                     <button className="bg-yellow-600 font-medium rounded-lg text-white sm:px-5 sm:py-4 px-5 py-3 text-nowrap lg:text-base sm:text-sm text-xs">
                       Register Now
                     </button>
