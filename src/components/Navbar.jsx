@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { NavDetails } from "../services/NavData";
-import { ChevronDown, ChevronRight, MenuIcon } from "lucide-react";
+import { ChevronDown, ChevronRight, MenuIcon, X } from "lucide-react";
 
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -126,17 +126,21 @@ function Navbar() {
             setShowNav((prev) => !prev);
           }}
         >
-          <MenuIcon className="font-extrabold h-full" />
+          {!showNav ? (
+            <MenuIcon className="h-full" />
+          ) : (
+            <X size={26} className="h-full" />
+          )}
           {showNav && (
             <div
               onClick={(e) => e.stopPropagation()}
               className="fixed top-16 sm:top-16 md:top-20 lg:top-20 lg:left-auto lg:right-10 left-0 right-0 h-[calc(100vh-4rem)] overflow-y-auto flex flex-col gap-5 backdrop-blur-md bg-yellow-700/70 lg:bg-yellow-600 lg:h-auto lg:overflow-visible text-white font-bold lato-regular lg:p-3 lg:rounded-2xl p-7 z-[999] lato-bold overflow-x-auto"
             >
-              <div className="flex flex-col gap-5 lg:hidden">
+              <div className="flex flex-col gap-7 lg:hidden">
                 <div className="flex gap-2 pb-3">
                   <Link
                     to={"/"}
-                    className="font-bold"
+                    className="font-bold w-full"
                     onClick={(e) => {
                       e.stopPropagation();
                       setShowNav(false);
@@ -187,9 +191,9 @@ function Navbar() {
                       }}
                       key={obj.linkName}
                     >
-                      <span className="inline-block h-full cursor-pointer">
-                        <div className="flex gap-2">
-                          <Link to={obj.path} className="font-bold">
+                      <span className="inline-block h-full pb-3 w-full cursor-pointer">
+                        <div className="flex gap-2 w-full">
+                          <Link to={obj.path} className="font-bold w-full">
                             {obj.linkName}
                           </Link>
                         </div>
@@ -198,7 +202,7 @@ function Navbar() {
                   );
                 })}
               </div>
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-7">
                 <Link
                   to={"/travels"}
                   onClick={(e) => {

@@ -10,7 +10,7 @@ function AboutSection() {
         <h1 className="font-bold md:text-4xl sm:text-2xl text-xl">
           About the Conference
         </h1>
-        <div className="mt-6 text-justify sm:text-lg text-sm flex flex-col gap-3 lato-regular">
+        <div className="mb-6 mt-2 text-justify sm:text-lg text-sm flex flex-col gap-3 lato-regular">
           <p>
             The intent of organizing the international conference is to provide
             tremendous opportunities to academics, researchers, and practicing
