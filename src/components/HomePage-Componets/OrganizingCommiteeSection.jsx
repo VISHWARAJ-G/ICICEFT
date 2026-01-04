@@ -21,12 +21,12 @@ function OrganizingCommiteeSection({ CommitteePage }) {
     },
     {
       image: "/optimized/HoD_AIDS.webp",
-      tagName: "Dr.G.Karthi",
+      tagName: "Dr. G. Karthi",
       designation: "Associate Professor & Head, AIDS",
     },
     {
       image: "/optimized/Nalini-priya.webp",
-      tagName: "Dr.G.Nalini Priya",
+      tagName: "Dr. G. Nalini Priya",
       designation: "Professor, IT",
     },
   ];
