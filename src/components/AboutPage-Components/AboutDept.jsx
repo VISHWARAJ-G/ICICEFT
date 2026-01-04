@@ -57,7 +57,7 @@ function AboutDept() {
               <div className="font-bold xl:text-4xl sm:text-2xl text-lg">
                 About SCoFT
               </div>
-              <div className="md:text-base sm:text-sm text-xs">
+              <div className="md:text-base sm:text-sm text-xs leading-relaxed">
                 Established in 2020, the Saveetha Consortium for Future
                 Technologies (SCoFT) is a multidisciplinary academic consortium
                 formed to advance Industry 5.0 learning and research at Saveetha

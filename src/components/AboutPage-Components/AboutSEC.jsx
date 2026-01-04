@@ -145,7 +145,7 @@ function AboutSEC() {
               <ul className="space-y-3">
                 {Overview.map((para) => {
                   return (
-                    <li className="flex items-start gap-3 md:text-base xs:text-sm text-xs ">
+                    <li className="flex items-start gap-3 md:text-base xs:text-sm text-xs leading-relaxed">
                       <CircleCheckBig
                         size={14}
                         className="text-yellow-400 mt-[3.5px] shrink-0"
